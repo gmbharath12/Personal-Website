@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<link rel="stylesheet" type="text/css" href="bharath.css">
+
+
+<title> Bharath G M </title>
+
+    <meta charset="UTF-8">
+
+    <meta name="author" content="Bharath">
+
+    <meta name="description" content="Web programming assignment">
+
+</head>
+
+<body>
+
+<header>
+
+
+<center>
+
+	<h1>
+
+		<u> BHARATH G M </u>
+
+	</h1>
+
+</center>
+
+</header>
+
+
+<section>
+
+<h3> ABOUT ME </h3>
+
+<p>
+
+<img src="bharath.png" width="275px" height="225px" alt="My_Image" usemap="#map" align="right"  >
+		
+    <map name="map">
+		 
+      <area shape="rect" coords="295,2,22,55" alt="Linked_in" href="https://www.linkedin.com/in/bharathgm"target="_blank">
+		 
+      <area shape="rect" coords="143,192,4,66" alt="Github" href="https://github.com/gmbharath12"target="_blank">
+		 
+      <area shape="rect" coords="149,64,306,195" alt="Twitter" href="https://twitter.com/gmbharath25"target="_blank">
+		  
+		</map>
+
+<ul class = "b" >
+        
+        <li>iOS Developer and develop apps for iOS devices and beyond! 4 of the apps are successfully deployed into App Store. </li>
+        
+        <li>I have spent last 4 years working almost everyday in Objective-C and has a love for it. </li>
+        
+        <li>I have worked in several other languages over the course of my programming career, but I chose Objective-C because it is a fantastic and 
+          unique object-oriented language that is very readable, elegant and has great standards.</li>
+         
+        <li>I thrive in an agile environment where code is written quickly and releases are fast and furious.</li>
+        
+        <li>I love what I do, I am constantly learning and growing, and hope to continue doing so for the rest of my life.</li>
+</p>
+
+</ul>
+
+</section>
+
+<section>
+
+    <h3> Work Experience</h3>
+
+    <dl><ol>
+
+    <dt><li>SST Software</li></dt>
+
+    <dd> Worked on Sirrus for iPad.</dd>
+
+    <dt><li>Walgreens</li></dt>
+
+    <dd> Worked on Walgreens app for iPhone and iPad.</dd>
+
+    <dt><li>Macy's</li></dt>
+
+    <dd> Worked on Bloomingdale's App for iPhone</dd>
+
+    </ol>
+
+</section>
+
+ <center><table class="table_prop">
+
+ <tr>
+
+   <th>Courses Enrolled</th>
+
+   <th>Professor</th>
+
+   <th>Academic Projects</th>
+
+ </tr>
+
+ <tr>
+
+   <td>Web Programming Languages</td>
+
+   <td>Dr. Mithun Balakrishna</td>
+
+   <td> Website </td>
+
+ </tr>
+
+ <tr>
+
+   <td>Object Oriented Analysis and Design</td>
+
+   <td>Dr. Ebenezer Oladimeji</td>
+
+   <td>Agile Methodologies</td>
+
+ </tr>
+
+ <tr>
+
+   <td>Artificial Intelligence</td>
+
+   <td>Dr. Mithun Balakrishna</td>
+
+   <td>Missionary Cannibal problem</td>
+
+ </tr>
+
+</table>
+
+</center>
+
+<div id = "form">
+
+<form>
+
+		<h3> Contact me for new job positions </h3>
+
+		First Name   </br>
+
+		<textarea autofocus required></textarea></br>
+
+		Company Name </br> 
+
+		<textarea novalidate></textarea></br>
+		
+		Compensation Offered</br>
+
+		<input type="number" name="quantity" min="500" ></br>
+
+		<p> How to contact me </p>
+
+		<input type="checkbox"  value="Mobile">Mobile</br>
+
+		<input type="checkbox"  value="E-Mail">E-Mail</br>
+
+		<p> Did you like my profile?? </p>
+
+		<input type="radio" name="Revisit" value="Yes">YES
+
+		<input type="radio" name="Revisit" value="No">NO</br>
+
+		</br>
+
+		<input type="submit" formtarget="_blank" value = "Submit to a new window">
+
+		<button type="reset" value = "Reset" >Reset</button>
+
+ </form>   
+
+</div>	
+
+</br>
+ 
+   <button id = "location" onclick="getLocation()">Get Location</button>
+
+   <script type="text/javascript">
+ 
+var x = document.getElementById("location");
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) 
+{
+    x.innerHTML="Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;  
+}
+
+</script>
+
+
+</br> </br>
+
+
+   <button onclick="dragAndDrop()">Drag and drop</button>
+
+</br>
+
+   <button onclick="storage()">Storage</button>
+
+<footer>
+
+
+<nav>
+
+    <div id="footer">
+
+    Copyright © <a href= http://cs.utdallas.edu/ target=_blank> Department of CS UTD </a>
+
+    </div>
+
+</nav>
+
+</footer>
+
+</body>
+
+</html>
